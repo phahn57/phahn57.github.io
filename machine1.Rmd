@@ -7,8 +7,6 @@ output: html_document
 ```{r}{r global_options, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 ```
-##Source .rmd 
-available at: https://github.com/phahn57/Coursera-PML
 
 ```{r message = FALSE,warning=FALSE}
 library(plyr)
@@ -18,6 +16,11 @@ library(reshape2)
 library(gbm)
 library(survival)
 ```
+
+##Source .rmd 
+available at: https://github.com/phahn57/Coursera-PML
+
+
 ## Introduction
 Analysis of data obtained from moving sensors have to be analysed. Several people were asked to lift a dumbbell in one correct and four incorrect fashion.
 exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), 
