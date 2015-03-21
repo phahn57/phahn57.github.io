@@ -64,7 +64,7 @@ img {
 <h1 class="title">Practical Machine Learning March 2015</h1>
 <h4 class="author"><em>Peter Hahn</em></h4>
 <h4 class="date"><em><ol start="18" style="list-style-type: decimal">
-<li>März 2015</li>
+<li>March 2015</li>
 </ol></em></h4>
 </div>
 
@@ -78,7 +78,7 @@ img {
 <h2>Data loading and exploratory data analysis.</h2>
 <p><strong>Data are obtained from: link <a href="http://groupware.les.inf.puc-rio.br/har" class="uri">http://groupware.les.inf.puc-rio.br/har</a> (weightlifting)</strong></p>
 <p><strong>Thanks for the genourosity of the researchers which allowed their data to be used for this assignment </strong></p>
-<p>Data are stored in the local directory and read by read.csv. Basic exploratory analysis and tidying is done directly after loading. Columns containing NA and empty spaces are removed from the dataset. As the first columns contain information about the participants and time related stuff, which is not useful for prediction, these columns are removed, too.</p>
+<p>Data are stored in the local directory and read by read.csv. Basic exploratory analysis and tidying is done directly after loading. Columns containing NA and empty spaces are removed from the data set. As the first columns contain information about the participants and time related stuff, which is not useful for prediction, these columns are removed, too.</p>
 </div>
 <div id="after-this-basic-analysis-predictors-are-presented-graphically" class="section level2">
 <h2>After this basic analysis, predictors are presented graphically</h2>
@@ -86,15 +86,15 @@ img {
 </div>
 <div id="removing-near-zero-values-and-highly-correlated-predictors" class="section level2">
 <h2>Removing near zero values and highly correlated predictors</h2>
-<p>As by optical recoginition data seem to be tidy, further statistical preprocessing is done. As analyses of near zero values gave no additional information, they are omitted here. 20 columns are excluded because they show high correlation to other variables</p>
+<p>As by optical recognition data seem to be tidy, further statistical preprocessing is done. As analyses of near zero values gave no additional information, they are omitted here. 20 columns are excluded because they show high correlation to other variables</p>
 </div>
 <div id="training-and-testing" class="section level2">
 <h2>Training and testing</h2>
-<p>Training dataset is split into 2 parts 70-30. One part for model-building. The other part for model testing.</p>
+<p>Training data set is split into 2 parts 70-30. One part for model-building. The other part for model testing.</p>
 </div>
 <div id="first-model-calculation" class="section level2">
 <h2>First model calculation</h2>
-<p>As this model does not seems to be linear, I decided for use of a tree approch. As Random forest trees are one of two top performing algorithms this one is used.</p>
+<p>As this model does not seems to be linear, I decided for use of a tree approach. As Random forest trees are one of two top performing algorithms this one is used. For calculation of out of sample error trainControl with k-fold</p>
 <pre><code>## Random Forest 
 ## 
 ## 13737 samples
@@ -176,9 +176,32 @@ img {
 ##     D    0    0    3  949   10
 ##     E    0    1    0    1 1072</code></pre>
 </div>
-<div id="calculation-of-accuracy" class="section level2">
-<h2>Calculation of Accuracy</h2>
-<p>Random forrest approach gives an accuracy of 0.9979609 and the GBM approach of 0.9913339</p>
+<div id="out-of-sample-error-and-accuracy" class="section level2">
+<h2>Out of sample error and accuracy</h2>
+<p>Random forest approach gives an accuracy of 0.9979609 and the GBM approach of 0.9913339 Thus Random forrest seems to give better results.</p>
+</div>
+<div id="for-calculation-of-sample-error-the-random-forest-model-is-used." class="section level2">
+<h2>For calculation of sample error the random forest model is used.</h2>
+<p>The <strong>in sample error</strong> is 0 as demonstrated in the following table, comparing prediction of training data versus training.</p>
+<p><strong>Out of sample error</strong> is greater which can be calculated from the second table below. This errors are already “smoothened” by the cross validation process used in the above calculations.</p>
+<pre><code>##          
+## predtrain    A    B    C    D    E
+##         A 3906    0    0    0    0
+##         B    0 2658    0    0    0
+##         C    0    0 2396    0    0
+##         D    0    0    0 2252    0
+##         E    0    0    0    0 2525</code></pre>
+<pre><code>##         
+## predtest    A    B    C    D    E
+##        A 1674    0    0    0    0
+##        B    0 1139    2    0    0
+##        C    0    0 1023    5    0
+##        D    0    0    1  958    3
+##        E    0    0    0    1 1079</code></pre>
+</div>
+<div id="result" class="section level2">
+<h2>Result</h2>
+<p>Using both approaches for prediction of the test-data provided with the assignment gave the same results. The results were uploaded to the submission page and gave 20 points out of 20</p>
 </div>
 
 

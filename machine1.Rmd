@@ -1,0 +1,123 @@
+---
+title: "Practical Machine Learning March 2015 "
+author: "Peter Hahn"
+date: "18. March 2015"
+output: html_document
+---
+```{r}{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
+```
+
+```{r message = FALSE,warning=FALSE}
+library(plyr)
+library(dplyr)
+library(caret)
+library(reshape2)
+library(gbm)
+library(survival)
+```
+## Introduction
+Analysis of data obtained from moving sensors have to be analysed. Several people were asked to lift a dumbbell in one correct and four incorrect fashion.
+exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), 
+lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).
+
+Read more: http://groupware.les.inf.puc-rio.br/har#ixzz3TRXwiS6M
+
+## Data loading and exploratory data analysis.
+
+**Data are obtained from:  link  http://groupware.les.inf.puc-rio.br/har (weightlifting)**
+
+**Thanks for the genourosity of the researchers which allowed their data to be used for this assignment **
+
+Data are stored in the local directory and read by read.csv. Basic exploratory analysis and tidying is done directly after loading. Columns containing NA and empty spaces are removed from the data set. As the first columns contain information about the participants and time related stuff, which is not useful for prediction, these columns are removed, too.
+
+```{r cache=TRUE}
+train<-read.csv("pml-training.csv",na.strings=c("NA",""))
+# Removing columns containing NA#s
+#Removing first 7 rows, as they make no sense for predection
+train<-train[,7:160]
+traina<-train[ , ! apply( train , 2 , function(x) any(is.na(x)) ) ]
+```
+
+## After this basic analysis, predictors are presented graphically
+```{r cache= TRUE, warning=FALSE,fig.width=12,fig.height=8,fig.path='Figs/'}
+
+## Graphically presentating data for exploration
+trainm<-melt(traina, id="classe")
+d<- ggplot(trainm, aes(classe,log(value))) + geom_point() 
+d+facet_wrap(~variable)
+```
+
+## Removing near zero values and highly correlated predictors
+As by optical recognition data seem to be tidy, further statistical preprocessing is done.
+As analyses of near zero values gave no additional information, they are omitted here. 20 columns are excluded because they show high correlation to other variables
+```{r cache =TRUE}
+dcor<-cor(traina[,-54])
+highcor <- findCorrelation(dcor, cutoff = .75)
+trainb<-traina[,-highcor]
+```
+
+## Training and testing
+Training data set is split into 2 parts 70-30. One part for model-building. The other part for model testing.  
+
+```{r}
+inTrain<-createDataPartition(y=trainb$classe,p=0.7,list=FALSE)
+training<-trainb[inTrain,]
+test<-trainb[-inTrain,]
+```
+
+## First model calculation
+As this model does not seems to be linear, I decided for use of a tree approach. As Random forest trees are one of two top performing algorithms this one is used.
+For calculation of out of sample error trainControl with k-fold 
+
+```{r cache=TRUE, cache.lazy=FALSE}
+rf_model<-train(classe~.,data=training,method="rf",trControl=trainControl(method="cv",number=3),prox=TRUE,allowParallel=TRUE,tuneLength=1)
+print(rf_model)
+pred<-predict(rf_model,test)
+```
+
+## Testing against test-set builded from the training set
+```{r cache = TRUE}
+pred<-predict(rf_model,test)
+table(pred,test$classe)
+```
+
+## Cross validation
+Although random forrest  perform an internal cross validation another prediction model is tested, using gbm (Generalized Boosted Regression Modelling)
+```{r cache =TRUE, cache.lazy=FALSE}
+modgbm<-train(classe~.,method="gbm",data=training,verbose=FALSE)
+print(modgbm)
+pred1<-predict(modgbm,test)
+```
+
+## Testing against test-set builded from the training set
+
+```{r } 
+table(pred1,test$classe)
+test_right<-pred==test$classe
+test_right1<-pred1==test$classe
+
+```
+
+## Out of sample error and accuracy 
+Random forest approach gives an accuracy of `r  sum(test_right)/nrow(test) ` and the GBM approach of `r sum(test_right1)/nrow(test) `
+Thus Random forrest seems to give better results.  
+
+## For calculation of sample error the random forest model is used.
+
+The **in sample error** is 0 as demonstrated in the following table, comparing prediction of training data versus training. 
+
+**Out of sample error** is greater which can be calculated from the second  table below.
+This errors are already "smoothened" by the cross validation process used in the above calculations.
+```{r}
+## Prediction of training against training data (in sample error)
+predtrain<-predict(rf_model,training)
+table(predtrain,training$classe)
+## Prediction of test against test data (out-of sample error)
+predtest<-predict(rf_model,test)
+table(predtest,test$classe)
+```
+
+
+## Result
+Using both approaches for prediction of the test-data provided with the assignment gave the same results. The results were uploaded to the submission page and gave 20 points out of 20
