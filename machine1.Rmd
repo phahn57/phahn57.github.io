@@ -7,6 +7,8 @@ output: html_document
 ```{r}{r global_options, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 ```
+##Source .rmd 
+available at: https://github.com/phahn57/Coursera-PML
 
 ```{r message = FALSE,warning=FALSE}
 library(plyr)
@@ -21,6 +23,8 @@ Analysis of data obtained from moving sensors have to be analysed. Several peopl
 exactly according to the specification (Class A), throwing the elbows to the front (Class B), lifting the dumbbell only halfway (Class C), 
 lowering the dumbbell only halfway (Class D) and throwing the hips to the front (Class E).
 
+Using machine learning a model should be fitted to the data, whih can be used to predict kind of movement(A-E) from the measurements of sensors. 
+
 Read more: http://groupware.les.inf.puc-rio.br/har#ixzz3TRXwiS6M
 
 ## Data loading and exploratory data analysis.
@@ -29,7 +33,7 @@ Read more: http://groupware.les.inf.puc-rio.br/har#ixzz3TRXwiS6M
 
 **Thanks for the genourosity of the researchers which allowed their data to be used for this assignment **
 
-Data are stored in the local directory and read by read.csv. Basic exploratory analysis and tidying is done directly after loading. Columns containing NA and empty spaces are removed from the data set. As the first columns contain information about the participants and time related stuff, which is not useful for prediction, these columns are removed, too.
+Data are stored in the local directory and read by read.csv. Basic exploratory analysis and tidying is done directly after loading. Columns containing NA and empty spaces are removed from the data set. As the first seven  columns contain information about the participants and time related stuff, which is not useful for prediction, these columns are removed, too.
 
 ```{r cache=TRUE}
 train<-read.csv("pml-training.csv",na.strings=c("NA",""))
@@ -48,6 +52,7 @@ d<- ggplot(trainm, aes(classe,log(value))) + geom_point()
 d+facet_wrap(~variable)
 ```
 
+There are now remaining predictors with zero values or with appearently outliers. 
 ## Removing near zero values and highly correlated predictors
 As by optical recognition data seem to be tidy, further statistical preprocessing is done.
 As analyses of near zero values gave no additional information, they are omitted here. 20 columns are excluded because they show high correlation to other variables
@@ -58,7 +63,7 @@ trainb<-traina[,-highcor]
 ```
 
 ## Training and testing
-Training data set is split into 2 parts 70-30. One part for model-building. The other part for model testing.  
+Training data set is split into 2 parts 70-30. One part for model-building. The other part for model testing. This splitting is used later for in and out of sample error calculation. 
 
 ```{r}
 inTrain<-createDataPartition(y=trainb$classe,p=0.7,list=FALSE)
@@ -104,10 +109,11 @@ Random forest approach gives an accuracy of `r  sum(test_right)/nrow(test) ` and
 Thus Random forrest seems to give better results.  
 
 ## For calculation of sample error the random forest model is used.
+I expect the out- of sample error to be greater than the in- of sample error.
 
 The **in sample error** is 0 as demonstrated in the following table, comparing prediction of training data versus training. 
 
-**Out of sample error** is greater which can be calculated from the second  table below.
+**Out of sample error** is greater ( approx. 0.2%) which can be calculated from the second  table below.
 This errors are already "smoothened" by the cross validation process used in the above calculations.
 ```{r}
 ## Prediction of training against training data (in sample error)
