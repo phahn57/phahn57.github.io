@@ -4,9 +4,9 @@ Personal information
 Data Science Künstliche Intelligenz, Digital health
 *Prof. Dr. med.*
 ####
-Head of Hand surgery Vulpius Klinik Bad Rappenau 2002-2024
-Medical director 2016-2023
-Head of strategy and process management since 2023 
+Head of Hand surgery Vulpius Klinik Bad Rappenau 2002-2024   
+Medical director 2016-2023   
+Head of strategy and process management since 2023    
 [https://medium.com/@kphahn57]   
 [https://www.linkedin.com/in/kphahn/]   
 [https://github.com/phahn57]   
