@@ -1,8 +1,9 @@
 # phahn57.github.io
 Personal information   
 ### Peter Hahn 
-Data Science Künstliche Intelligenz, Digital health      
 *Prof. Dr. med.*
+**Data Science Künstliche Intelligenz, Digital health**      
+
 ####
 Head of Hand surgery Vulpius Klinik Bad Rappenau 2002-2024   
 Medical director 2016-2023   
