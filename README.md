@@ -1,7 +1,7 @@
 # phahn57.github.io
 Personal information   
 ### Peter Hahn 
-*Prof. Dr. med.*
+*Prof. Dr. med.*   
 **Data Science Künstliche Intelligenz, Digital health**      
 
 ####
