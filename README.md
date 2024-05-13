@@ -11,7 +11,7 @@ Head of strategy and process management since 2023
 [https://medium.com/@kphahn57]   
 [https://www.linkedin.com/in/kphahn/]   
 [https://github.com/phahn57]   
-#### Publikationen:
+### Publikationen:
 
 #### Business Intelligence (BI) im Krankenhaus beginnt bereits beim ersten Kontaktpunkt der Terminvergabe:  Strukturierte Datenerfassung als Grundlage für Workflow, Wirtschaftlichkeit und Patientenorientierung 
 In: Die kritischen Erfolgsfaktoren der digitalen Transformation im Krankenhaus
@@ -60,7 +60,7 @@ Conference on Artificial Intelligence in Medicine in Europe, 211-222, 1997.
 mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
 
-#### Vorträge (Auswahl):
+### Vorträge (Auswahl):
 #### KI Gespräch Gesundheit/Medizin
 Heilbronn Mai 2024
 #### Bias in der Künstlichen Intelligenz
