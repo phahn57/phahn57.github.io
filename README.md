@@ -41,13 +41,13 @@ Journal of Hand Surgery 39 (4), 813-814, 2014.
 #### Funktionelle Störungen der Fingerbewegungen bei der Ulnaris-Lähmung. Klinisch experimentelle Untersuchungen mit Neuronalen Netzen
 Habilitationsschrift Würzburg 1999
 #### Diagnosis of Finger Dysfunction Caused by Ulnar Nerve Lesion
-Mmt: J Rahmel, C Blum
+mit: J Rahmel, C Blum
 Journal of Intelligent Systems 8 (1-2), 163-184, 1998.  
 #### On the role of hierarchy for neural network interpretation
 mit: J Rahmel, C Blum
 IJCAI, 1072-1077, 1997.  
 #### A Tree-Structured Approach to Medical Diagnosis Tasks
-Mmt: J Rahmel, P Hahn
+mit: J Rahmel, P Hahn
 ECAI-Workshop Neural Networks and Structured Knowledge, 1996.  
 #### Interpretation of a hierarchical neural network
 mit: J Rahmel, C Blum
@@ -72,7 +72,8 @@ Think Camp der Rhön-Stiftung 2024
 DGUV-Tagung Baden-Baden Nov. 2023
 #### Künstliche Intelligenz in der Handchirurgie
 Berlin Nov. 2023
-#### Künstliche Intelligenz in der Handchirurgie 30. Handchirurgischer Samstag Bad Neustadt 2022
+#### Künstliche Intelligenz in der Handchirurgie
+30. Handchirurgischer Samstag Bad Neustadt 2022
 #### Bias in der Künstlichen Intelligenz
 Think Camp der Eugen Münch Stiftung 2021
 #### Digitale Transformation in der Medizin
@@ -88,7 +89,7 @@ Kongress der DGH, München, 2017.
 #### Reproducible research
 Kongress der DGH, München, 2017.  
 #### Zusatz- Ausbildung
-Data Science Certification Johns- Hopkins University 2015-2016
+Data Science Certification Johns- Hopkins University 2015-2016    
 Calculus for Machine Learning 2023 
 
 #### Imprint:
