@@ -61,6 +61,8 @@ mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
 
 ### Vorträge (Auswahl):
+#### Künstliche Intelligenz in der Medizin, Gekommen um zu bleiben
+VHS Ludwigsburg Januar 2025
 #### Künstliche Intelligenz, LLM und Robotik in der Handchirurgie
 DGH-Kongress Oktober 2024
 #### KI Gespräch Gesundheit/Medizin
