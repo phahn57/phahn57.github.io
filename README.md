@@ -60,8 +60,12 @@ mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
 
 ### Vorträge (Auswahl):
-#### Künstliche Intelligenz in der Medizin, Gekommen um zu bleiben
-VHS Ludwigsburg Januar 2025
+#### Nutzen und Risiken von künstlicher Intelligenz im handchirurgischen Alltag   
+Hamburg Februar 2025   
+#### Entscheiden und Handeln unter Unsicherheit   
+E-health Symposium Kaiserslautern Februar 2025   
+#### Künstliche Intelligenz in der Medizin, Gekommen um zu bleiben   
+VHS Ludwigsburg Januar 2025   
 #### Künstliche Intelligenz, LLM und Robotik in der Handchirurgie
 DGH-Kongress Oktober 2024
 #### KI Gespräch Gesundheit/Medizin
