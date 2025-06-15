@@ -5,9 +5,10 @@ Personal information
 **Data Science, Künstliche Intelligenz, Digital health**      
 
 ####
+Head of strategy and process management since 2023 ongoing
 Head of Handsurgery Vulpius Klinik Bad Rappenau 2002-2024   
 Medical director 2016-2023   
-Head of strategy and process management since 2023    
+   
 [https://medium.com/@kphahn57]   
 [https://www.linkedin.com/in/kphahn/]   
 [https://github.com/phahn57]   
@@ -60,6 +61,8 @@ mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
 
 ### Vorträge (Auswahl):
+#### Entscheiden und Handeln unter Unsicherheit
+Think Camp der Rhön-Stiftung Juni 2025, Frankfurt 
 #### Nutzen und Risiken von künstlicher Intelligenz im handchirurgischen Alltag   
 Hamburg Februar 2025   
 #### Entscheiden und Handeln unter Unsicherheit   
