@@ -106,7 +106,7 @@ Waldstraße 1
 74906 Bad Rappenau
 #### Kontakt
 Telefon: +49 (0) 17662430200
-E-Mail: kphahn57@gmail.com
+E-Mail: peter@phahn.io
 #### EU-Streitschlichtung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
 https://ec.europa.eu/consumers/odr/.
