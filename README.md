@@ -5,7 +5,7 @@ Personal information
 **Data Science, Künstliche Intelligenz, Digital health**      
 
 ####
-Head of strategy and process management since 2023 ongoing
+Head of strategy and process management since 2023 ongoing   
 Head of Handsurgery Vulpius Klinik Bad Rappenau 2002-2024   
 Medical director 2016-2023   
    
