@@ -61,6 +61,8 @@ mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
 
 ### Vorträge (Auswahl):
+#### Entscheiden unter Unsicherheit
+33. Kongress der GFFC in München
 #### Entscheiden und Handeln unter Unsicherheit
 Think Camp der Rhön-Stiftung Juni 2025, Frankfurt 
 #### Nutzen und Risiken von künstlicher Intelligenz im handchirurgischen Alltag   
