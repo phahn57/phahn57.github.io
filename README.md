@@ -60,10 +60,12 @@ Conference on Artificial Intelligence in Medicine in Europe, 211-222, 1997.
 #### Investigation of finger dynamics in ulnar nerve palsy using neural networks
 mit: J Rahmel
 Journal of Hand Surgery 22 , 1997.  
+#### Quantitative Analysis of the Linkage between the interphalangeal joints of the Index Finger.
+https://journals.sagepub.com/doi/abs/10.1016/s0266-7681(05)80139-1
 
 ### Vorträge (Auswahl):
 #### Entscheiden unter Unsicherheit
-33. Kongress der GFFC in München
+Kongress der GFFC in München
 #### Entscheiden und Handeln unter Unsicherheit
 Think Camp der Rhön-Stiftung Juni 2025, Frankfurt 
 #### Nutzen und Risiken von künstlicher Intelligenz im handchirurgischen Alltag   
@@ -83,7 +85,7 @@ DGUV-Tagung Baden-Baden Nov. 2023
 #### Künstliche Intelligenz in der Handchirurgie
 Berlin Nov. 2023
 #### Künstliche Intelligenz in der Handchirurgie
-30. Handchirurgischer Samstag Bad Neustadt 2022
+Handchirurgischer Samstag Bad Neustadt 2022
 #### Bias in der Künstlichen Intelligenz
 Think Camp der Eugen Münch Stiftung 2021
 #### Digitale Transformation in der Medizin
