@@ -2,18 +2,20 @@
 Personal information   
 ### Peter Hahn 
 *Prof. Dr. med.*   
-**Data Science, Künstliche Intelligenz, Digital health**      
+**Data Science, Artificial Intelligence, Digital health**      
 
 ####
 Keynote speaker    
-Head of strategy and process management since 2023-2025   
+Head of strategy and process management 2023-2026   
 Head of Handsurgery Vulpius Klinik Bad Rappenau 2002-2024   
 Medical director 2016-2023   
    
 [https://medium.com/@kphahn57]   
 [https://www.linkedin.com/in/kphahn/]   
 [https://github.com/phahn57]   
-### Publikationen:
+[https://scholar.google.de/citations?user=SvjbxlMAAAAJ&hl=de]
+
+### Publikationen KI und Data Science (Auswahl):
 #### Business Intelligence (BI) im Krankenhaus beginnt bereits beim ersten Kontaktpunkt der Terminvergabe:  Strukturierte Datenerfassung als Grundlage für Workflow, Wirtschaftlichkeit und Patientenorientierung 
 In: Die kritischen Erfolgsfaktoren der digitalen Transformation im Krankenhaus
 Hrsg: Meier, Hüsken, Maier 2024 
