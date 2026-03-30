@@ -66,8 +66,10 @@ Journal of Hand Surgery 22 , 1997.
 https://journals.sagepub.com/doi/abs/10.1016/s0266-7681(05)80139-1
 
 ### Vorträge (Auswahl):
+#### Sprachmaschinen
+Heilbronner Gesellschaft 2026
 #### Entscheiden unter Unsicherheit
-Kongress der GFFC in München
+Kongress der GFFC in München 2025
 #### Entscheiden und Handeln unter Unsicherheit
 Think Camp der Rhön-Stiftung Juni 2025, Frankfurt 
 #### Nutzen und Risiken von künstlicher Intelligenz im handchirurgischen Alltag   
