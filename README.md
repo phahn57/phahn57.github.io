@@ -16,6 +16,9 @@ Medical director 2016-2023
 [https://scholar.google.de/citations?user=SvjbxlMAAAAJ&hl=de]
 
 ### Publikationen KI und Data Science (Auswahl):
+#### Healthcare professionals show high AI enthusiasm but limited knowledge: A cross-sectional study
+Nada Abedin ,Peter Hahn,Stefan Zeuzem,Georg Dultz
+PLOS Digital Health, Juni 2026 
 #### Business Intelligence (BI) im Krankenhaus beginnt bereits beim ersten Kontaktpunkt der Terminvergabe:  Strukturierte Datenerfassung als Grundlage für Workflow, Wirtschaftlichkeit und Patientenorientierung 
 In: Die kritischen Erfolgsfaktoren der digitalen Transformation im Krankenhaus
 Hrsg: Meier, Hüsken, Maier 2024 
@@ -66,6 +69,8 @@ Journal of Hand Surgery 22 , 1997.
 https://journals.sagepub.com/doi/abs/10.1016/s0266-7681(05)80139-1
 
 ### Vorträge (Auswahl):
+#### Sprachmaschinen- eine (fast) philosophische Betrachtung
+Sqior summer summit 2026
 #### Sprachmaschinen
 Heilbronner Gesellschaft 2026
 #### Entscheiden unter Unsicherheit
