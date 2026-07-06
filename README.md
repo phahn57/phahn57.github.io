@@ -68,7 +68,9 @@ Journal of Hand Surgery 22 , 1997.
 #### Quantitative Analysis of the Linkage between the interphalangeal joints of the Index Finger.
 https://journals.sagepub.com/doi/abs/10.1016/s0266-7681(05)80139-1
 
-### Vorträge (Auswahl):
+### Vorträge/Webinar (Auswahl):
+#### IBRA Webinar AI in Medicine – Future Opportunities: AI, Digitalization, and Robotics
+Juli 2026
 #### Sprachmaschinen- eine (fast) philosophische Perspektive
 Sqior summer summit 2026
 #### Sprachmaschinen
@@ -113,6 +115,9 @@ Kongress der DGH, München, 2017.
 Data Science Certification Johns- Hopkins University 2015-2016    
 Calculus for Machine Learning 2023 
 
+### Videos
+#### Hände, Roboter und Künstliche Intelligenz | Eduard Heindl Energiegespräch
+[Energiegespäche](https://youtu.be/bCN-rtml7c0)
 #### Imprint:
 Dr. Peter Hahn
 Data Science, Artificial Intelligence, Keynote speaker
